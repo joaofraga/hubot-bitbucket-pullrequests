@@ -23,10 +23,11 @@ Then add *hubot-bitbucket-pullrequests* to your external-scripts.json:
 
 Set the following environment settings:
 
-`HUBOT_BITBUCKET_REPOSITORIES=owner/repo,owner/repo` with repositories which you want to list open Pull Requests.
-`HUBOT_BITBUCKET_AUTH_USER=your_username` with your BitBucket username login.
-`HUBOT_BITBUCKET_AUTH_PASS=your_password` with your BitBucket password login.
-
+```
+HUBOT_BITBUCKET_REPOSITORIES=owner/repo,owner/repo # with repositories which you want to list open Pull Requests.
+HUBOT_BITBUCKET_AUTH_USER=your_username # with your BitBucket username login.
+HUBOT_BITBUCKET_AUTH_PASS=your_password # with your BitBucket password login.
+```
 ## Commands
 
 ```
