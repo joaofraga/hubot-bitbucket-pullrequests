@@ -1,6 +1,6 @@
 # Hubot Bitbucket Pull Requests
 
-List all opened Pull Requests of selected repositories
+List all BitBucket open Pull Requests in all or selected repositories
 
 ## Features
 
