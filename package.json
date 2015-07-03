@@ -1,0 +1,24 @@
+{
+  "name": "hubot-bitbucket-pullrequests",
+  "version": "1.0.0",
+  "description": "List all open Pull Requests in all or selected repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.tests.js -t 15000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaofraga/hubot-bitbucket-pullrequests.git"
+  },
+  "keywords": [
+    "hubot",
+    "bitbucket",
+    "pull-request"
+  ],
+  "author": "João Fraga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaofraga/hubot-bitbucket-pullrequests/issues"
+  },
+  "homepage": "https://github.com/joaofraga/hubot-bitbucket-pullrequests#readme"
+}
