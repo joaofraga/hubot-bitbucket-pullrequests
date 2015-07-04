@@ -16,10 +16,14 @@
     "pull-request"
   ],
   "dependencies": {
-    "coffee-script": "~1.7.1"
+    "coffee-script": "~1.7.1",
+    "bitbucket-api": "git@bitbucket.org:jgfraga/node-bitbucket-api.git"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "chai": "2.3.0",
+    "sinon-chai": "*",
+    "sinon": "*"
   },
   "author": "João Fraga <jgfraga@gmail.com>",
   "license": "MIT",
