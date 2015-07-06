@@ -6,7 +6,7 @@ all_repos = process.env.HUBOT_BITBUCKET_REPOSITORIES.split(",")
 
 class BitBucket
   constructor: (credentials, repos = "") ->
-    bitBucket = require 'bitbucket-api'
+    bitBucket = require 'sand-bucket'
     @client = bitBucket.createClient(credentials)
     @repositories = repos
 
