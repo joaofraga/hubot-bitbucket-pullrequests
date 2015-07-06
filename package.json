@@ -1,6 +1,6 @@
 {
   "name": "hubot-bitbucket-pullrequests",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "List all BitBucket open Pull Requests in all or selected repositories",
   "main": "index.coffee",
   "scripts": {
