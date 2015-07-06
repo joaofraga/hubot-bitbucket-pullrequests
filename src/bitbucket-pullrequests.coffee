@@ -27,8 +27,8 @@ ensureConfig = (out) ->
 module.exports = (robot) ->
   ensureConfig console.log
 
-  robot.respond /list pull-requests for (\w.+)/i, (msg) ->
-    msg.send "Não implementado ainda"
+  robot.respond /list (\w.+) pull-requests/i, (msg) ->
+    pullRequests.summary msg, msg.match[1]
 
   robot.respond /list pull-requests/, (msg) ->
     pullRequests.summary msg
