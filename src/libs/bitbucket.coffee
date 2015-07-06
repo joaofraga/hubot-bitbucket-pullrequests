@@ -20,10 +20,16 @@ class BitBucket
         # TODO: think some way to easily load PRs and show on screen
         repo.pullRequests().getAll (err, pullRequests) ->
           pullRequestsSize = pullRequests.values.length
-          message = "- *#{repo.owner}/#{repo.slug}* [#{pullRequestsSize}] pull requests\n"
+          message = ":coffee: *#{repo.owner}/#{repo.slug}* | [#{pullRequestsSize}] _pull requests_\n\n\n"
           if pullRequestsSize > 0
             for pullRequest in pullRequests.values
-              message += "\t• ##{pullRequest.id} - `#{pullRequest.title}` by #{pullRequest.author.username} #{timeago(new Date(pullRequest.created_on))}\n"
+              message += "\n"
+              message += "> ##{pullRequest.id}\n"
+              message += "> #{pullRequest.title}\n"
+              message += "> by #{pullRequest.author.username} _#{timeago(new Date(pullRequest.created_on))}_\n"
+              message += "> #{pullRequest.links.self.href}\n\n"
+          else
+            message += "> :clap: :clap: :clap: :clap: :clap: :clap: :clap: \n\n"
 
           msg.send message
 
