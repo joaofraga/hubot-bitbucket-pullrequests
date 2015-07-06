@@ -1,3 +1,5 @@
+timeago = require 'timeago'
+
 credentials =
   username: process.env.HUBOT_BITBUCKET_AUTH_USER
   password: process.env.HUBOT_BITBUCKET_AUTH_PASS
@@ -21,7 +23,7 @@ class BitBucket
           message = "- *#{repo.owner}/#{repo.slug}* [#{pullRequestsSize}] pull requests\n"
           if pullRequestsSize > 0
             for pullRequest in pullRequests.values
-              message += "\t* ##{pullRequest.id} - `#{pullRequest.title}` by #{pullRequest.author.username} on #{pullRequest.created_on}\n"
+              message += "\t• ##{pullRequest.id} - `#{pullRequest.title}` by #{pullRequest.author.username} #{timeago(new Date(pullRequest.created_on))}\n"
 
           msg.send message
 
