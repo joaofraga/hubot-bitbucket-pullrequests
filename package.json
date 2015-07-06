@@ -1,6 +1,6 @@
 {
   "name": "hubot-bitbucket-pullrequests",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "List all BitBucket open Pull Requests in all or selected repositories",
   "main": "index.coffee",
   "scripts": {
@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "coffee-script": "~1.7.1",
-    "bitbucket-api": "git@bitbucket.org:jgfraga/node-bitbucket-api.git"
+    "bitbucket-api": "git:git@bitbucket.org:jgfraga/node-bitbucket-api.git"
   },
   "devDependencies": {
     "mocha": "*",
