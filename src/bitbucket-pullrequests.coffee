@@ -5,8 +5,8 @@
 #   None
 #
 # Commands:
-#   list pull-requests - Display opened pull requests
-#   list pull-requests for <repository-slug> - Display opened pull requests for repository-slug
+#   hubot list pull-requests - Display opened pull requests
+#   hubot list <repository-slug> pull-requests - Display opened pull requests for repository
 #
 # Author:
 #   jgfraga

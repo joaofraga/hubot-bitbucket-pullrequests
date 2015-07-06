@@ -32,5 +32,5 @@ HUBOT_BITBUCKET_AUTH_PASS=your_password # with your BitBucket password login.
 
 ```
 hubot list pull-requests - List pull requests of all repositories
-hubot list pull-requests for <repository-slug> - List pull request of a selected repository
+hubot list <repository> pull-requests - List pull request of a selected repository
 ```
