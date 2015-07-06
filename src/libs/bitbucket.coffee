@@ -12,7 +12,6 @@ class BitBucket
 
   summary: (msg, repo) ->
     _repositories = if repo? then [repo] else @repositories
-    console.log _repositories
     for repository in _repositories
       @getRepository repository, (err, repo) ->
         # Repository logic comes here
